@@ -1,0 +1,33 @@
+file 1:"20150101-010000"|
+						|
+ar nico 1 26542			|
+en larry 5 2165			|
+En.d Sheried 1 56		|
+						|
+						|
+________________________|
+
+
+MAP REDUCE:
+
+MAPPER:
+input: file1
+output: <yymmddhh, lang\t name\t views\t bytes>
+
+RECUDER:
+input: <yymmddhh, lang\t name\t views\t bytes>
+output: file 2
+
+
+
+
+_____________________________
+file 2:"reduce-part-r-00000"|
+							|
+150101-01 en larry 5 2165	|
+150101-01 En.d Sheried 1 56	|
+							|
+							|
+____________________________|
+
+
